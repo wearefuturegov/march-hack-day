@@ -2,6 +2,10 @@
 
 A [Next.js](https://nextjs.org/) app with [Prisma](https://www.prisma.io/). It follows Rails-like CRUD patterns for familiarity.
 
+- `prisma/prisma.schema` overlaps with Rails' models and migrations. Some database-level validations (unique constraints and so on) can be defined here
+- `pages/api` contains API endpoints that are conceptually similar to Rails controller actions.
+- Everything else in `pages` is the view layer, which, in a React app, is where most functionality tends to be. Some include `getServerSideProps` functions that may either call API endpoints or the database directly to populate data pages need.
+
 ## Developing
 
 You need Node and npm installed.
