@@ -21,7 +21,7 @@ Suitable for anywhere Next.js apps can run, including Netlify, Vercel and Heroku
 You can apply the schema to a fresh database with:
 
 ```
-npx prisma push db --preview-featue
+npx prisma push db --preview-feature
 ```
 
 ## Configuration
