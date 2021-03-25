@@ -26,10 +26,10 @@ npx prisma push db --preview-featue
 
 ## Configuration
 
-It needs these configuration variables to be set. You can use a `.env` file locally.
+It needs these configuration variables similar to these to be set. You can use a `.env` file locally.
 
 ```
-DATABASE_URL
-NEXTAUTH_URL
-SESSION_SECRET
+DATABASE_URL=url://to/your/database
+NEXTAUTH_URL=http://localhost:3000/api/auth/signin
+SESSION_SECRET=secret
 ```
