@@ -1,6 +1,8 @@
 # March 2021 FG hack day app
 
-A [Next.js](https://nextjs.org/) app with [Prisma](https://www.prisma.io/). It follows Rails-like CRUD patterns for familiarity.
+A [Next.js](https://nextjs.org/) app with [Prisma](https://www.prisma.io/).
+
+It follows Rails-like CRUD patterns for familiarity:
 
 - `prisma/prisma.schema` overlaps with Rails' models and migrations. Some database-level validations (unique constraints and so on) can be defined here
 - `pages/api` contains API endpoints that are conceptually similar to Rails controller actions.
