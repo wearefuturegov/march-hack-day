@@ -1,12 +1,18 @@
 # March 2021 FG hack day app
 
+A [Next.js](https://nextjs.org/) app with [Prisma](https://www.prisma.io/). It follows Rails-like CRUD patterns for familiarity.
+
 ## Developing
+
+You need Node and npm installed.
 
 ```
 npm i
 npx prisma generate
 npm run dev
 ```
+
+It will be on `localhost:3000`.
 
 ## Deploying it
 
