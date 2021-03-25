@@ -51,7 +51,11 @@ const Index = ({ posts }) => {
       </Layout>
     )
 
-  return <p>bugger off</p>
+  return (
+    <p>
+      Please <a href="/api/auth/signin">Log in</a>
+    </p>
+  )
 }
 
 export default Index

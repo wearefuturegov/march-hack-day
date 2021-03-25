@@ -29,6 +29,8 @@ model User {
   @@map(name: "users")
 }
 
+// Everything below here is copied from https://next-auth.js.org/schemas/adapters#prisma-schema
+
 model Account {
   id                 Int       @id @default(autoincrement())
   compoundId         String    @unique @map(name: "compound_id")

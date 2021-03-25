@@ -13,6 +13,7 @@ const authHandler = (req, res) =>
 
       Providers.Email({
         sendVerificationRequest: async ({ url }) => {
+          // just log the login URL to the console for now, we're just testing
           return await console.log(url)
         },
       }),
