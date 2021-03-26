@@ -22,7 +22,7 @@ export const getServerSideProps = async () => {
 
 const Index = ({ plans }) => (
   <Layout>
-    <Map />
+    <Map plans={plans} />
     <h1>Plans</h1>
     <table>
       <thead>
