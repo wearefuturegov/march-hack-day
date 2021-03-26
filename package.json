@@ -13,10 +13,12 @@
   "dependencies": {
     "@prisma/client": "^2.19.0",
     "formik": "^2.2.6",
+    "leaflet": "^1.7.1",
     "next": "9.5.5",
     "next-auth": "^3.13.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
+    "react-leaflet": "^3.1.0",
     "sass": "^1.32.8"
   },
   "devDependencies": {
