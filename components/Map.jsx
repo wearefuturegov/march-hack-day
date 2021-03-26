@@ -13,11 +13,15 @@ const Map = ({plans}) => (
       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
-    <Marker position={[51.511549161417705, -0.12814928764125325]}>
-      <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
-      </Popup>
-    </Marker>
+    {
+      plans.map(plan => (
+        <Marker position={[plan.latitude, plan.longitude]}>
+          <Popup>
+            {plan.development_description} <br /> {plan.registered_date}
+          </Popup>
+        </Marker>
+      ))
+    }
   </MapContainer>
 )
 
