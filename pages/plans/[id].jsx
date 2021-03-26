@@ -11,10 +11,11 @@ export const getServerSideProps = async () => {
     }
   )
   const plans = await res.json()
-  return { props: { plans } }
+  // either have an api endpoint for a single plan, or add a plans.filter() logic to grab only the one we're interested in
+  return { props: { plan } }
 }
 
-const Show = ({ plans }) => (
+const Show = ({ plan }) => (
   <Layout>
     <h1>Plans</h1>
     {/* content here */}

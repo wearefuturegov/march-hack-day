@@ -34,11 +34,11 @@ const Index = ({ plans }) => (
       </thead>
       <tbody>
         {plans.map(plan => (
-          <tr key={plan.id}>
+          <tr key={plan.pk}>
             <td>{plan.development_address}</td>
             <td>{plan.development_description}</td>
             <td>
-              <Link href={`/plans/${plan.id}`}>
+              <Link href={`/plans/${plan.pk}`}>
                 <a>Show</a>
               </Link>
             </td>
